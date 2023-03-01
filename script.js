@@ -5,7 +5,7 @@ document.body.append(div1);
 const playerChar = document.createElement("div");
 playerChar.id="Player1";
 playerChar.style.bottom = "1px";
-playerChar.style.left = "205px";
+playerChar.style.left = "195px";
 div1.append(playerChar);
 const AIChar = document.createElement("div");
 AIChar.id="Player2";
@@ -28,7 +28,7 @@ function moveRight(){
     const Pleft = parseInt(PleftNumbers, 10);
     const AleftNumbers = AIChar.style.left.replace("px","");
     const Aleft = parseInt(AleftNumbers, 10);
-    if (Pleft < 245) {
+    if (Pleft < 240) {
       playerChar.style.left = `${Pleft + 1}px`;
       AIChar.style.left = `${Aleft - 1}px`;
     }
